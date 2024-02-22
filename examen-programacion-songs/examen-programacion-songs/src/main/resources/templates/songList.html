@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Canciones:</h1>
+    <p th:each="song : ${songs}"
+        th:text="|${song.title} ${song.year} ${song.singer.name} ${song.singer.surname}|"></p>
+</body>
+</html>
